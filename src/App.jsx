@@ -23,7 +23,7 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'education', 'projects', 'skills', 'certificates',  'contact']
+      const sections = ['home', 'education', 'projects', 'skills', 'certificates', 'contact']
       const scrollPosition = window.scrollY + 100
 
       for (const section of sections) {
@@ -48,7 +48,7 @@ function App() {
 
           <div className="flex items-center space-x-6">
             <div className="hidden md:flex space-x-8">
-              {['home', 'why', 'education', 'projects', 'skills', 'certificates', 'testimonials', 'contact'].map((item) => (
+              {['home', 'education', 'projects', 'skills', 'certificates', 'contact'].map((item) => (
                 <a
                   key={item}
                   href={`#${item}`}
